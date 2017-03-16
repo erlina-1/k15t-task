@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.page-wrap {
+  width: 840px;
+  margin: 20px auto;
+}
+
+.content
+{
+  display: flex;
+  flex-direction: row;
+}

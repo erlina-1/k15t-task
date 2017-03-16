@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.page-wrap {
+  width: 840px;
+  margin: 20px auto;
+}
+
+.content
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.description img
+{
+  width: 360px;
+  margin-right: 20px;
+}
+
+img {
+  display: block;
+}
+
+.card
+{
+  width:360px;
+  height: 460px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 6px;
+}
