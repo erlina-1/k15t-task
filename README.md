@@ -20,7 +20,7 @@ It should look nice for every screen resolution, at least for smartphones.
 #### Task 2
 Please call the JSON API: https://jsonplaceholder.typicode.com/users and display the data in a table.
 
-The table should contain a column for:
+###### The table should contain a column for:
 * Username
 * E-Mail (click should open e-mail client)
 * Street (click should open google maps)
