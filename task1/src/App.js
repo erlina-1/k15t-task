@@ -1,4 +1,5 @@
-import ResponsiveScreen from './components/ResponsiveScreen';
+import { ResponsiveScreen } from './components';
+import './styles/global.css';
 
 function App() {
   return (
