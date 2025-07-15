@@ -1,10 +1,10 @@
-# K15 Monorepo
+# K15T Monorepo
 
 This is a monorepo project containing three independent tasks using [npm workspaces](https://docs.npmjs.com/cli/v9/using-npm/workspaces) and [Lerna](https://lerna.js.org/).
 
 ## 📁 Project Structure
 
-- k15/
+- k15t/
   - task1/  (React app – responsive screen)
   - task2/  (React app – API call and data display)
   - task3/  (HTML & CSS static task)
