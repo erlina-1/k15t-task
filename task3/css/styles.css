@@ -1,33 +1,166 @@
+:root {
+  --font-regular: 'Roboto', sans-serif;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --color-bg: #FFFFFF;
+  --color-border: #CCCCCC;
+  --color-dark: #333333;
+  --color-muted: #999999;
+  --color-info: #3572B0;
+  --color-status-support: #4A6785;
+  --container-width: 840px;
+  --card-width: 360px;
+  --card-height: 460px;
+  --spacing: 20px;
+  --border-radius: 6px;
+  --fs-base: 14px;
+}
+
 * {
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--font-regular);
+  margin: 0;
+  padding: 0;
+}
+
 .page-wrap {
-  width: 840px;
+  width: var(--container-width);
   margin: 20px auto;
 }
 
-.content
-{
+h1 {
+  font-size: 24px;
+}
+
+.right {
+  text-align: right;
+}
+
+.content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: var(--spacing);
 }
 
-.description img
-{
-  width: 360px;
-  margin-right: 20px;
+.description {
+  width: var(--card-width);
 }
 
-img {
+.description img {
+  width: 100%;
   display: block;
+  border-radius: var(--border-radius);
 }
 
-.card
-{
-  width:360px;
-  height: 460px;
-  background: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  border-radius: 6px;
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 30px var(--spacing) var(--spacing);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-logos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.card-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  margin-bottom: 24px;
+}
+
+.round-image {
+  width: 64px;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image {
+  width: 160px;
+  height: 79px;
+  object-fit: cover;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.project-name {
+  font-size: 10px;
+  color: var(--color-muted);
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.project-status {
+  font-size: 11px;
+  font-family: var(--font-regular);
+  font-weight: var(--weight-medium);
+  color: var(--color-status-support);
+  border: 1px solid var(--color-status-support);
+  border-radius: 3px;
+  display: inline-block;
+  padding: 1.5px 8px;
+}
+
+.issue-title {
+  font-size: 20px;
+  font-weight: var(--weight-regular);
+  color: var(--color-dark);
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+
+.issue-description {
+  font-size: var(--fs-base);
+  font-weight: 300;
+  color: var(--color-dark);
+  line-height: 20px;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.help-link {
+  font-size: var(--fs-base);
+  color: var(--color-info);
+  text-decoration: none;
+}
+
+.start-btn {
+  background-color: var(--color-info);
+  color: white;
+  font-size: var(--fs-base);
+  font-weight: var(--weight-medium);
+  border: none;
+  border-radius: 3px;
+  padding: 6px 20px;
+  cursor: pointer;
 }

@@ -1,12 +1,15 @@
-import React from 'react';
-import UserTable from './components/UserTable';
+import React from "react";
+import UserTable from "./components/UserTable";
 
 function App() {
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>User Directory</h1>
-      <UserTable />
-    </div>
+    <>
+      <title>Task 2</title>
+      <div style={{ padding: "20px" }}>
+        <h1>User Directory</h1>
+        <UserTable />
+      </div>
+    </>
   );
 }
 
