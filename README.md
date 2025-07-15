@@ -1,43 +1,63 @@
-# Web Developer Sample Project #
+# K15 Monorepo
 
-## What is it about?
-Thank you so much for your interest in working at K15t and that you give us the chance to get an impression of your way of working. Besides the most important part of possible employees, the person itself, of cause we ware also interested how you solve problems and if that is a fit to our way too.
-We know there are million ways to get to a certain goal so please feel free to use any technology or framework you need, know and love.
+This is a monorepo project containing three independent tasks using [npm workspaces](https://docs.npmjs.com/cli/v9/using-npm/workspaces) and [Lerna](https://lerna.js.org/).
 
-Please view these tasks as your possibility to showcase your skills. Let us know any assumptions you made for the tasks or ideas how they could be further improved.
+## 📁 Project Structure
 
-## But *what* should I do exactly?
-* Fork this repository
-* Showcase your skills with the given tasks
-* Check in your changes into your repository
-* Write your contact person that you are done with the tasks and forward the link to your repository
-
-#### Task 1
-Update the css files and add responsive behavior to the design.
-It should look nice for every screen resolution, at least for smartphones.
-
-#### Task 2
-Please call the JSON API: https://jsonplaceholder.typicode.com/users and display the data in a table.
-
-###### The table should contain a column for:
-* Username
-* E-Mail (click should open e-mail client)
-* Street (click should open google maps)
-* City
-* Company
-* Company catch phrase
-
-#### Task 3
-The image provides how the final view should look like. Recreate the design with html and css in the given box.
-You will find detailed design specification with sizes, colors etc. in the "task3/design_specs" folder.
+- k15/
+  - task1/  (React app – responsive screen)
+  - task2/  (React app – API call and data display)
+  - task3/  (HTML & CSS static task)
+  - package.json
+  - lerna.json
+  - README.md
 
 
-## What's expected of me?
-When our engineers receive your final result, we'll be looking at the following things:
+## 📦 Prerequisites
 
-* Improvements you made around the main task
-* The quality and style of code written
-* The choice of technologies used to complete the task. You are free to use what every you think is needed and helps you to get it done!
+- [Node.js](https://nodejs.org/) >= v16
+- [npm](https://www.npmjs.com/) >= v7 (for workspace support)
+
+## 🚀 Getting Started
+
+### Install dependencies
+
+Install all dependencies from the root directory:
+
+npm install
+
+### Start all projects concurrently
+This command runs the start script for all three tasks in parallel:
+
+npm run start:all
 
 
-Good luck!
+🛠 Scripts
+
+| Script              | Description                            |
+| ------------------- | -------------------------------------- |
+| `npm install`       | Installs all dependencies across tasks |
+| `npm run start:all` | Starts all tasks concurrently          |
+
+🧩 Tools Used
+
+npm workspaces — Manage multiple projects in a monorepo.
+Lerna — Monorepo management tool (v8+ supports native npm workspaces).
+concurrently — Run multiple npm scripts in parallel.
+
+📘 Notes
+task1 and task2 are React apps (using Create React App).
+task3 is a static HTML/CSS project.
+You can serve task3 with a static server - BrowserSync.
+
+📁 Lerna Configuration (lerna.json)
+
+{
+  "version": "0.0.0",
+  "useWorkspaces": true,
+  "packages": [
+    "task1",
+    "task2",
+    "task3"
+  ]
+}
