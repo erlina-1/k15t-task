@@ -1,0 +1,15 @@
+{
+  "name": "task3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "start": "browser-sync start --server --files '*.html, *.css' --port 8080"
+   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}

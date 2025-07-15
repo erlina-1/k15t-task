@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "task1",
+    "task2",
+    "task3"
+  ],
+  "scripts": {
+    "start:all": "concurrently \"npm run start --workspace=task1\" \"npm run start --workspace=task2\" \"npm run start --workspace=task3\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "lerna": "^8.2.3"
+  }
+}
